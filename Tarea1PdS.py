@@ -13,18 +13,21 @@ lf = list()
 
 
 def check(s, l, sf, lf):
+
     x = re.search("-+", s)
 
     if x:
         logging.error(datetime.datetime.now().strftime("%H") + ":" + datetime.datetime.now().strftime("%M") + ":"
-                     + datetime.datetime.now().strftime("%S") + " " + s +
+                     + datetime.datetime.now().strftime("%S") + " \"" + s + "\"" +
                      ". Error: ingresó el caracter \"-\" que no está permitido ")
+        print("Error: ingresó el caracter \"-\" que no está permitido.")
         return 1
 
     if len(l) == 0:
         logging.error(datetime.datetime.now().strftime("%H") + ":" + datetime.datetime.now().strftime("%M") + ":"
-                     + datetime.datetime.now().strftime("%S") + " " + s +
+                     + datetime.datetime.now().strftime("%S") + " \"" + s + "\"" +
                      ". Error: ingresó una cadena de caracteres vacía")
+        print("Error: ingresó una cadena de caracteres vacía.")
         return 1
 
     if len(l) == 1:
@@ -57,12 +60,14 @@ def check(s, l, sf, lf):
     if len(s) <= len(sf) - 1 - g:
         print(s)
         logging.info(datetime.datetime.now().strftime("%H") + ":" + datetime.datetime.now().strftime("%M") + ":"
-                     + datetime.datetime.now().strftime("%S") + " " + s + ", " + s)
+                     + datetime.datetime.now().strftime("%S") + " \"" + s + "\", \"" + s + "\"")
+        print(s)
         return 0
     else:
         print(sf[1:])
         logging.info(datetime.datetime.now().strftime("%H") + ":" + datetime.datetime.now().strftime("%M") + ":"
-                     + datetime.datetime.now().strftime("%S") + " " + s + ", " + sf[1:])
+                     + datetime.datetime.now().strftime("%S") + " \"" + s + "\", " + "\"" + sf[1:]+  "\"")
+        print(sf[1:])
         return 0
 
 
