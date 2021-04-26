@@ -58,13 +58,11 @@ def check(s, l, sf, lf):
         sf += str(i)
 
     if len(s) <= len(sf) - 1 - g:
-        print(s)
         logging.info(datetime.datetime.now().strftime("%H") + ":" + datetime.datetime.now().strftime("%M") + ":"
                      + datetime.datetime.now().strftime("%S") + " \"" + s + "\", \"" + s + "\"")
         print(s)
         return 0
     else:
-        print(sf[1:])
         logging.info(datetime.datetime.now().strftime("%H") + ":" + datetime.datetime.now().strftime("%M") + ":"
                      + datetime.datetime.now().strftime("%S") + " \"" + s + "\", " + "\"" + sf[1:]+  "\"")
         print(sf[1:])
