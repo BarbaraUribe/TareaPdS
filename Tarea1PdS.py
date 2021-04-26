@@ -1,22 +1,30 @@
 import re
+import logging
+import datetime
 
+logging.basicConfig(
+    filename=datetime.datetime.now().strftime("%d") + "-" + datetime.datetime.now().strftime("%m") + "-" +
+             datetime.datetime.now().strftime("%Y") + ".log", level=logging.DEBUG)
 print("Ingresar cadena de caracteres: \n")
-s = ""
 s = input()
 l = list(s)
 sf = ""
 lf = list()
 
 
-def revisar(s, l, sf, lf):
+def check(s, l, sf, lf):
     x = re.search("-+", s)
 
     if x:
-        print("Error, ingresó el caracter \"-\" que no está permitido ")
+        logging.error(datetime.datetime.now().strftime("%H") + ":" + datetime.datetime.now().strftime("%M") + ":"
+                     + datetime.datetime.now().strftime("%S") + " " + s +
+                     ". Error: ingresó el caracter \"-\" que no está permitido ")
         return 1
 
     if len(l) == 0:
-        print("Error, ingresó una cadena de caracteres vacía")
+        logging.error(datetime.datetime.now().strftime("%H") + ":" + datetime.datetime.now().strftime("%M") + ":"
+                     + datetime.datetime.now().strftime("%S") + " " + s +
+                     ". Error: ingresó una cadena de caracteres vacía")
         return 1
 
     if len(l) == 1:
@@ -48,10 +56,14 @@ def revisar(s, l, sf, lf):
 
     if len(s) <= len(sf) - 1 - g:
         print(s)
+        logging.info(datetime.datetime.now().strftime("%H") + ":" + datetime.datetime.now().strftime("%M") + ":"
+                     + datetime.datetime.now().strftime("%S") + " " + s + ", " + s)
         return 0
     else:
         print(sf[1:])
+        logging.info(datetime.datetime.now().strftime("%H") + ":" + datetime.datetime.now().strftime("%M") + ":"
+                     + datetime.datetime.now().strftime("%S") + " " + s + ", " + sf[1:])
         return 0
 
 
-revisar(s, l, sf, lf)
+check(s, l, sf, lf)
