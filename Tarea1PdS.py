@@ -34,6 +34,12 @@ def check(s, l, sf, lf):
         print(s)
         return 0
 
+    if len(l) > 50:
+        logging.error(datetime.datetime.now().strftime("%H") + ":" + datetime.datetime.now().strftime("%M") + ":"
+                      + datetime.datetime.now().strftime("%S") + " \"" + s + "\"" +
+                      ". Error: ingresó una cadena de caracteres muy larga")
+        print("Error: ingresó una cadena de caracteres muy larga.")
+        return 1
     c = ""
     a = 0
     g = 0
@@ -64,7 +70,7 @@ def check(s, l, sf, lf):
         return 0
     else:
         logging.info(datetime.datetime.now().strftime("%H") + ":" + datetime.datetime.now().strftime("%M") + ":"
-                     + datetime.datetime.now().strftime("%S") + " \"" + s + "\", " + "\"" + sf[1:]+  "\"")
+                     + datetime.datetime.now().strftime("%S") + " \"" + s + "\", " + "\"" + sf[1:] + "\"")
         print(sf[1:])
         return 0
 
