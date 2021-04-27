@@ -41,6 +41,7 @@ Al ingresar de esta forma nuestra cadena de caracteres presionamos la tecla ENTE
 `Ingresar cadena de caracteres:`
 
 `aaaaaaaaaaaaaaaaabbc`
+
 `a17b2c1`
 
 Finalmente, nuestro programa genera un archivo de logs en la carpeta donde este es ejecutado. Aquí se encuentra la información sobre los inputs, outputs y errores presentes durante la ejecución.
