@@ -32,15 +32,15 @@ Luego de ejecutar nuestro programa se nos pedirá que ingresemos una cadena de c
 
 Esta cadena no debe contener más de 50 caracteres, debe ser ingresada manualmente a través del teclado y no debe estar vacía.
 
-`Ingresar cadena de caracteres:
+`Ingresar cadena de caracteres:`
 
-aaaaaaaaaaaaaaaaabbc`
+`aaaaaaaaaaaaaaaaabbc`
 
 Al ingresar de esta forma nuestra cadena de caracteres presionamos la tecla ENTER y nos dará el resultado de nuestra cadena comprimida. En este ejemplo:
 
-`Ingresar cadena de caracteres: 
+`Ingresar cadena de caracteres:`
 
-aaaaaaaaaaaaaaaaabbc
-a17b2c1`
+`aaaaaaaaaaaaaaaaabbc`
+`a17b2c1`
 
 Finalmente, nuestro programa genera un archivo de logs en la carpeta donde este es ejecutado. Aquí se encuentra la información sobre los inputs, outputs y errores presentes durante la ejecución.
