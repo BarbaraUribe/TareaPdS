@@ -2,19 +2,19 @@
 
 ### Bárbara Uribe Cataldo - 201673074-5 - barbara.uribe@sansano.usm.cl
 
-##Instalación
+## Instalación
 
 Para poder utilizar este programa se debe instalar [Python 3.9.4](https://www.python.org) en su última versión. En el link indicado se puede descargar y seguir los pasos indicados para su instalación.
 
-##Ejecución
+## Ejecución
 
 Para poder ejecutar este programa tenemos varias opciones:
 
-Ejecución mediante IDLE de Python:
+### Ejecución mediante IDLE de Python:
 
 Para ello debemos abrir el archivo Tarea1PdS.py en nuestro IDLE de Python instalado y presionar F5, también podemos ejecutarlo presionando en el menú "Run" en la parte superior del IDLE y presionando a continuación en el menú desplegado "Run Module".
 
-Ejecución mediante consola o terminal:
+### Ejecución mediante consola o terminal:
 
 Podemos ejecutar el programa directamente en la consola de nuestro computador, o en la terminal de nuestro editor de código favorito.
 
@@ -24,7 +24,7 @@ Para ello, establecemos nuestro directorio en donde se encuentre nuestro archivo
 python Tarea1PdS.py
 `
 
-##Uso
+## Uso
 
 Luego de ejecutar nuestro programa se nos pedirá que ingresemos una cadena de caracteres:
 
